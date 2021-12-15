@@ -2,7 +2,7 @@
 // Get our helper functions
 
 // Set variables for our request
-$api_key = "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"; //Replace with your API KEY
+$api_key = "e97e2bd0a49fb36acbd19e4f7a9fb842"; //Replace with your API KEY
 $shared_secret = "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"; //Replace with your Shared secret key
 $params = $_GET; // Retrieve all request parameters
 $hmac = $_GET['hmac']; // Retrieve HMAC request parameter
