@@ -3,8 +3,8 @@
 require_once("config.php");
 
 // Set variables for our request
-$api_key = $app_id; //Replace with your API KEY
-$shared_secret = $app_pass; //Replace with your Shared secret key
+$api_key = "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"; //Replace with your API KEY
+$shared_secret = "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"; //Replace with your Shared secret key
 $params = $_GET; // Retrieve all request parameters
 $hmac = $_GET['hmac']; // Retrieve HMAC request parameter
 
