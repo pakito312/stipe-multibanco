@@ -3,7 +3,7 @@
 
 // Set variables for our request
 $api_key = "e97e2bd0a49fb36acbd19e4f7a9fb842"; //Replace with your API KEY
-$shared_secret = "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"; //Replace with your Shared secret key
+$shared_secret = "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"; //Replace with your Shared secret key
 $params = $_GET; // Retrieve all request parameters
 $hmac = $_GET['hmac']; // Retrieve HMAC request parameter
 
@@ -21,7 +21,7 @@ if (hash_equals($hmac, $computed_hmac)) {
         $query = array(
             "client_id" => $api_key, // Your API key
             "client_secret" => $shared_secret, // Your app credentials (secret key)
-            "code" => "2021-10" // Grab the access key from the URL
+            "code" => "2021-01" // Grab the access key from the URL
         );
 
         // Generate access token URL
