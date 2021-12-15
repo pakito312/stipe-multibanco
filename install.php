@@ -5,7 +5,6 @@
 $api_key = "e97e2bd0a49fb36acbd19e4f7a9fb842"; //Replace with your API KEY
 $shop = $_GET['shop'];
 
-$api_key = "ASSIGN YOUR API KEY HERE";
 $scopes = "read_orders,write_products";
 $redirect_uri = "https://paki-shop.herokuapp.com/generate_token";
 
