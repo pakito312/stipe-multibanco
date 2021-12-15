@@ -41,7 +41,9 @@ if (hash_equals($hmac, $computed_hmac)) {
         $access_token = $result['access_token'];
         if ($access_token) {
             header('Location: https://' . $shop_url . '/admin/apps');
-            exit();
+            exit('ici');
+        }else{
+            var_dump($access_token);
         }
     } catch (\Throwable $th) {
         echo "Error installation: " . $th->getMessage();
