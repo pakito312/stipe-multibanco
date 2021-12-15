@@ -21,7 +21,7 @@ if (hash_equals($hmac, $computed_hmac)) {
         $query = array(
             "client_id" => $api_key, // Your API key
             "client_secret" => $shared_secret, // Your app credentials (secret key)
-            "code" => "2021-04" // Grab the access key from the URL
+            "code" => "2021-10" // Grab the access key from the URL
         );
 
         // Generate access token URL
