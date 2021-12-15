@@ -1,5 +1,5 @@
 {
-    "name": "Shopify Checkout Bypasser",
+    "name": "Shopify Stripe multibanco",
     "repository": "https://github.com/pakito312/stipe-multibanco",
     "logo": "https://cdn.shopify.com/shopify-marketing_assets/static/shopify-favicon.png",
     "env": {

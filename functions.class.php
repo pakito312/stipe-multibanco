@@ -34,7 +34,7 @@ class Functions {
     function getShopifyCart($token) {
         include('config.php');
 
-        $url = 'https://' . $app_id . '@' . $store_url . '/admin/api/2020-01/carts/' . $token . '.json';
+        $url = 'https://' . $app_id . '@' . $store_url . '/admin/api/2021-04/carts/' . $token . '.json';
     
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -115,7 +115,7 @@ class Functions {
 
     function sendAccountInvite($customer_id) {
         $data = '{"customer_invite": {}}';
-        $response = $this->postRequestShopify("/admin/api/2020-10/customers/" . $customer_id . "/send_invite.json", $data);
+        $response = $this->postRequestShopify("/admin/api/2021-04/customers/" . $customer_id . "/send_invite.json", $data);
         return $response;
     }
 
