@@ -19,7 +19,7 @@ $cart = $functions->getShopifyCart($_POST['token']);
 
 for ($i = 1; $i <= count($cart["line_items"]); $i++) {
 
-    $response = $functions->getRequestShopify('/admin/api/2020-04/products/' . $cart["line_items"][$i-1]["product_id"] . '/images.json');
+    $response = $functions->getRequestShopify('/admin/api/2021-04/products/' . $cart["line_items"][$i-1]["product_id"] . '/images.json');
     $image_src = json_decode($response, true)["images"][0]["src"];
 
     $data["line_items[" . ($i-1) . "][name]"] = $cart["line_items"][$i-1]["title"];
