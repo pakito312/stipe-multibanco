@@ -36,8 +36,8 @@ if (hash_equals($hmac, $computed_hmac)) {
         $result = curl_exec($ch);
         curl_close($ch);
         // Store the access token
-        $result = json_decode($result, true);
         var_dump($result);
+        $result = json_decode($result, true);
         $access_token = $result['access_token'];
         if ($access_token) {
             header('Location: https://' . $shop_url . '/admin/apps');
